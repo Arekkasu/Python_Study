@@ -1,4 +1,4 @@
-#Detecto de tango de X numero
+#Detecto de tango de X numero, este con If
 value = int(input('Ingrese el valor: '))
 if value >= 0 and value <= 5:
     print(f'{value} Esta en el rango')
