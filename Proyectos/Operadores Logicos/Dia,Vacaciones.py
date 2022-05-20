@@ -4,5 +4,6 @@ Descanso = str(input('dias de descanso?: '))
 if Vacaciones == 'y' or Descanso == 'y':
     print('Puedes ir')
 elif Vacaciones == 'n' or Descanso == 'n':
+    print('No puedes ir')
 else:
-    print('No puedes')
+    print('mal')
