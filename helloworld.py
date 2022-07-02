@@ -6,7 +6,7 @@ del como se realizaran las cosas, recuerda que se pueden hacer tipos de comentar
 este es mas para hacer los comentarios largos los otros es solo define la funcion (asi lo definiré yo vale)
 """
 x = int(3) #para numeros
-y= str(3) #estandar
+y= str(3) #cadena (texto)
 c = float(3) #decimales
 print(x) 
 print(y)
