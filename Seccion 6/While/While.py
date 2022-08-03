@@ -1,4 +1,4 @@
-'''Se usa el while para que mientras se cumple algo se ejecute y en caso que no se cumpla lo termine
+'''Se usa el while para que se ejecute un caso mientras sea True y en caso que no se cumpla lo termine
 como por ejemplo'''
 ejem_ = True
 while ejem_:
