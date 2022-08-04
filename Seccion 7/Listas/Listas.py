@@ -38,3 +38,38 @@ lista_2 = list(range(11))
 print(lista_2[::2])  #salta de 2 en 2
 print(lista_2 + list('hola')) #Agrega 'Hola'
 print(lista*3) #triplica
+
+#Listas Methods
+
+	#Agregar elemento
+lista.append(575)
+print(lista)
+
+lista.insert(7,16) #primer numero 7  es el index y 11 el elemento que se agregara
+print(lista)
+
+	#remover
+lista.remove(16)
+print(lista)
+
+	#saber la id de un elemento (solo puede devolver uno)
+print(lista.index(575))
+	#por ID
+lista.pop(10)
+
+#listas por compresion es ahorrar lineas en una iteracion
+
+num = list(range(1,9))
+
+li = []
+
+for x in num:
+	if x < 5:
+		li.append(x**2)
+
+print(li)
+
+#con compresion
+
+l2 = [x**2 for x in num if x < 5]
+print(l2)
