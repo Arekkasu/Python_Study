@@ -1,6 +1,7 @@
 '''Las listas son mutables (SE PUEDEN MODIFICAR, LAS LISTAS TIENEN UN INICIO Y UN FINAL
 HACIENDO QUE LAS LISTAS SEAN SECUENCIALES'''
 
+from contextvars import copy_context
 from tokenize import Number
 
 
@@ -147,8 +148,59 @@ print(Copy_Numbers)
 
 print('La modificacion')
 print()
-print(Numbers is Copy_Numbers) # --> Falso debido a que es una compia y tiene su propia ubicacion en la memoria
+print(Numbers is Copy_Numbers) # --> Falso debido a que es una copia y tiene su propia ubicacion en la memoria
 print()
 print(f'como queda la lista Numbers --> {Numbers}')
 print()
 print(f'Como queda la copia --> {Copy_Numbers}')
+
+
+#Listas de Listas
+print('-----------')
+print()
+print('Copia de listas')
+Matriz_1 = [
+	list(range(4)),
+	list(range(4,9)),
+	list(range(8,13))
+]
+
+copy_b = Matriz_1
+
+copy_c = Matriz_1[:]
+
+print(Matriz_1)
+print()
+print(copy_b)
+print()
+print(copy_c)
+print()
+
+print('-------Modificaciones---------')
+
+print()
+
+print(Matriz_1)
+copy_b[1] = 10
+print()
+print(copy_b)
+print()
+print(f'{copy_c} --> No se agrega el 10')
+
+print('----------------------------')
+copy_c[0] = 11
+
+print(f'{Matriz_1}')
+print()
+print(f'{copy_b}')
+print()
+print(f'{copy_c} --> Se modifica ahora si')
+
+print('----------------------------')
+print()
+copy_c[2][1] = '200'
+print(f'{Matriz_1} --> se modifica')
+print()
+print(f'{copy_b} --> se modifica')
+print()
+print(f'{copy_c} --> se modifica')

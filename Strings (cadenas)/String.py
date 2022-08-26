@@ -32,7 +32,6 @@ encode_2 = ejem6.encode(encoding='ascii',errors="backslashreplace")
 encode_3 = ejem6.encode(encoding='ascii',errors="namereplace")
 encode_4 = ejem6.encode(encoding='ascii',errors="replace")
 encode_5 = ejem6.encode(encoding='ascii',errors="xmlcharrefreplace")
-encode_6 = ejem6.encode(encoding='ascii',errors="strict")
 #Textos
 sep = '''------------------------------------------------------------------------------------------------------------'''
 text1 = '''Se veran todos los metodos ('method') y su descripcion de usos
